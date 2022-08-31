@@ -1,16 +1,19 @@
 #!/usr/bin/python3
+"""lockboxes"""
 
 
 def canUnlockAll(boxes):
+    """lockboxes"""
+
     keys = []
     opened = 0
     for value in boxes[0]:
         keys.append(value)
-        opened+=1
-    
+        opened += 1
+
     for i in range(1, len(boxes)):
         if i in keys:
-            opened+=1
+            opened += 1
             for value in boxes[i]:
                 if value not in keys:
                     keys.append(value)
