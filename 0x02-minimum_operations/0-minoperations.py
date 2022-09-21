@@ -50,6 +50,7 @@ def minOperations(n):
 
     return operations
 
+
 def copy_all():
     """copy all letters currently printed"""
     global copied
@@ -70,6 +71,7 @@ def paste():
     H += copied
     chars = len(H)
     return H
+
 
 def is_prime(n):
     if n > 1:
