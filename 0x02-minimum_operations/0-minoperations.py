@@ -1,0 +1,64 @@
+#!/usr/bin/python3
+"""Computes minimum amount of operations needed to reach n letters of H"""
+
+H = "H"
+chars = 1
+operations = 0
+copied = ""
+
+
+def minOperations(n):
+    """main function that computes number of operations needed"""
+    global H
+    global chars
+    global operations
+    global copied
+
+    H = "H"
+    operations = 0
+    copied = ""
+    chars = 1
+
+
+    if n == chars or n < 0:
+        return operations
+    copy_all()
+    paste()
+
+    for i in range(n):
+        if chars < n:
+            chars_needed = n - chars
+            if (chars_needed) % 2 != 0: #number of chars needed to be added is odd
+                paste()
+            copy_all()
+
+            while ((n - chars) - chars > 4):
+                paste()
+                copy_all()
+            for i in range((n - chars) // chars):
+                paste()
+
+    return operations
+
+
+def copy_all():
+    """copy all letters currently printed"""
+    global copied
+    global operations
+
+    copied = H
+    operations += 1
+
+
+def paste():
+    """pastes all letters stored from the previous copy_all function call"""
+    global copied
+    global operations
+    global H
+    global chars
+
+
+    operations += 1
+    H += copied
+    chars = len(H)
+    return H
