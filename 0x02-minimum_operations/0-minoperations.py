@@ -30,13 +30,14 @@ def minOperations(n):
             chars_needed = n - chars
             if (chars_needed) % 2 != 0: #number of chars needed to be added is odd
                 paste()
-            copy_all()
-
-            while ((n - chars) - chars > 4):
-                paste()
+            if chars !=  n:
                 copy_all()
-            for i in range((n - chars) // chars):
-                paste()
+
+                while ((n - chars) - chars > 4):
+                    paste()
+                    copy_all()
+                for i in range((n - chars) // chars):
+                    paste()
 
     return operations
 
