@@ -23,32 +23,6 @@ def minOperations(n):
         return 0
     if is_prime(n):
         return n
-    copy_all()
-    paste()
-
-    for i in range(n):
-        if chars < n:
-            chars_needed = n - chars
-            if (chars_needed) % 2 != 0:
-                # number of chars needed to be added is odd
-                paste()
-            if chars != n:
-                if (chars - (n - chars) == 1):
-                    for i in range(n - chars):
-                        paste()
-                    return operations
-                # print("chars", chars)
-                # print("chars needed", n - chars)
-                # print()
-                copy_all()
-
-                while ((n - chars) - chars > 4):
-                    paste()
-                    copy_all()
-                for i in range((n - chars) // chars):
-                    paste()
-
-    return operations
 
 def copy_all():
     """copy all letters currently printed"""
