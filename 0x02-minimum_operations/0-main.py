@@ -28,6 +28,9 @@ print("Min # of operations to reach {} char: {}".format(n, minOperations(n)))
 
 n = 6
 print("Min # of operations to reach {} char: {}".format(n, minOperations(n)))
+
+n = 8
+print("Min # of operations to reach {} char: {}".format(n, minOperations(n)))
 """
 n = 12
 H => Copy All => Paste => HH => Copy All => Paste =>HHHH => Copy All => Paste =>HHHHHHHH => Paste => HHHHHHHHHHHH
@@ -40,7 +43,7 @@ Number of operations: 7
 """
 """
 n = 6
-H => Copy All => Paste => HH => Copy All => Paste => HHHH -> Paste => HHHHHH
+H => Copy All => Paste => HH => Copy All => Paste-> HHHH -> Copy All -> Paste => HHHHHHHH
 Number of operations: 7
 """
 
