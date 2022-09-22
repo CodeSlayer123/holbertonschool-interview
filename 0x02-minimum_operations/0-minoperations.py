@@ -7,7 +7,6 @@ operations = 0
 copied = ""
 
 
-
 def minOperations(n):
     """main function that computes number of operations needed"""
     small_divisor = 0
@@ -29,7 +28,6 @@ def minOperations(n):
                 additional = 1
             return i + small_divisor - additional
     return n
-
 
 
 def minOperations_backup(n):
