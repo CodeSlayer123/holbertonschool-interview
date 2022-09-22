@@ -7,7 +7,25 @@ operations = 0
 copied = ""
 
 
+
 def minOperations(n):
+    """main function that computes number of operations needed"""
+    small_divisor = 0
+    if n <= 1:
+        return 0
+    div = [5, 4, 3, 2]
+
+    for i in div:
+        if n == i:
+            return n
+        if n % i == 0:
+            small_divisor = n // i
+            return i + small_divisor
+    return n
+
+
+
+def minOperations_backup(n):
     """main function that computes number of operations needed"""
     global H
     global chars
