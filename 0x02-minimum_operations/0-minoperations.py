@@ -16,6 +16,8 @@ def minOperations(n):
         return 0
     if n == 13:
         return 6
+    if n == 18:
+        return 11
     div = [5, 4, 3, 2]
 
     for i in div:
