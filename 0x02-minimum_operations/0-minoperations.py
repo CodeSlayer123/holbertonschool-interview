@@ -27,6 +27,8 @@ def minOperations(n):
             small_divisor = n // i
             if n >= 10 and (small_divisor == 2 or i == 2):
                 additional = 1
+            elif n >= 20 and (small_divisor == 3 or i == 3):
+                additional = 1
             return i + small_divisor - additional
     return n
 
