@@ -54,19 +54,15 @@ void sandpiles_sum(int grid1[3][3], int grid2[3][3]){
 
                     grid1[i][j] = grid1[i][j] - 4;
 
-                    //check for lower
                     if (i < 2){
                         grid1[i+1][j]++;
                     }
-                    //check for right
                     if (j < 2){
                         grid1[i][j+1]++;
                     }
-                    //check for top
                     if (i > 0){
                         grid1[i-1][j]++;
                     }
-                    //check for left
                     if (j > 0){
                         grid1[i][j-1]++;
                     }
