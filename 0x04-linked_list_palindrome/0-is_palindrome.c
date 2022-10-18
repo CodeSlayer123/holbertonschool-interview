@@ -14,19 +14,22 @@ int is_palindrome(listint_t **head){
         tmp = tmp->next;
 
     }
-    while ((*first)->next != NULL && last != *head){
-        printf("test");
+    while ((*first)->next != tmp){
+        if (*first == tmp){
+            break;
+        }
         if ((*first)->n != last->n){
             return 0;
         }
-        *first = (*first)->next;
-        last = tmp;
+
         tmp = *head;
         if (tmp != last){
             while (tmp->next != last){
                 tmp = tmp->next;
             }
         }
+        *first = (*first)->next;
+        last = tmp;
 
     }
     return 1;
