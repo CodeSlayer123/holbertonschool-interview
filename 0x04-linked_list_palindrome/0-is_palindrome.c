@@ -1,12 +1,16 @@
 #include "lists.h"
 #include <stdio.h>
 int is_palindrome(listint_t **head){
+    listint_t **first;
+    listint_t *last;
+    listint_t *tmp;
+
     if (*head == NULL){
         return 1;
     }
-    listint_t **first = head;
-    listint_t *last = *first;
-    listint_t *tmp = *first;
+    first = head;
+    last = *first;
+    tmp = *first;
 
     last = last->next;
     while(last->next != NULL){
