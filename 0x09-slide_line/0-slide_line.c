@@ -29,7 +29,6 @@ void slide_left(int *line, size_t size) {
     for (i = 0; i < size; i++){
         if (i > 0){
             if (line[i] == line[i - 1]){
-                //printf("j is: %d", line[i - 1]);
                 line[i - 1] += line[i];
                 line[i] = 0;
             }
