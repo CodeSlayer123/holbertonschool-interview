@@ -8,10 +8,12 @@ void menger(int level){
     int i;
     int j;
     int z;
+    int y;
+    int x;
 
-    for (int y = 0; y < size; y++) {
+    for (y = 0; y < size; y++) {
 
-        for (int x = 0; x < size; x++) {
+        for (x = 0; x < size; x++) {
             i = x;
             j = y;
 
