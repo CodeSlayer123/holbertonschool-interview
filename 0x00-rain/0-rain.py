@@ -7,14 +7,23 @@ def rain(walls):
     if len(walls) <= 0 or 0 not in walls:
         return 0
     total = 0
-    for i in walls:
-        if i == 0:
-            walls.remove(i)
-    for i in walls:
-        if i == 0:
-            walls.remove(i)
+    count = 0
+    for i in range(len(walls)):
+        if walls[i] > 0:
+            count = 0
+            x = walls[i]
+            for j in range(i + 1, len(walls)):
+                if walls[j] > 0:
+                    y = walls[j]
+                    break
+                if j == len(walls) - 1:
+                    count = 0
+                    break
+                count += 1
 
-    size = len(walls)
-    for j in range(size - 1):
-        total += walls[j]
+            if x < y:
+                total += (count * x)
+            else:
+                total += (count * y)
+
     return total
