@@ -7,7 +7,6 @@ def rain(walls):
     if len(walls) <= 0:
         return 0
     total = 0
-    print(walls)
     for i in walls:
         if i == 0:
             walls.remove(i)
