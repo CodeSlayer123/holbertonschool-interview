@@ -2,8 +2,9 @@
 """
 0_rain
 """
+
 def rain(walls):
-    
+
     if len(walls) <= 0 or 0 not in walls:
         return 0
     total = 0
