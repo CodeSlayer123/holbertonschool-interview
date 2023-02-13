@@ -1,6 +1,4 @@
 #!/usr/bin/python3
-
-
 """Rotate a 2d matrix in python"""
 
 
