@@ -1,6 +1,10 @@
 #!/usr/bin/python3
+'''Making change algo'''
+
 
 def makeChange(coins, total):
+    '''Making change algo'''
+
     new_total = total
     change = 0
     coins.sort(reverse=True)
