@@ -5,6 +5,8 @@
 def makeChange(coins, total):
     '''Making change algo'''
 
+    if (total <= 0):
+        return 0
     new_total = total
     change = 0
     coins.sort(reverse=True)
