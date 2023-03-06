@@ -3,14 +3,13 @@
 
 
 def island_perimeter(grid):
-    """Islang perimeter algo"""
-
+    """Island perimeter algo"""
     total = 0
-    for i in range(len(grid)):
-        for j in range(len(grid)):
+    for i in range(len(grid) - 1):
+        for j in range(len(grid[i]) - 1):
             if (grid[i][j] == 1):
 
-                if (j != len(grid)):
+                if (j != len(grid[i])):
                     if (grid[i][j+1] == 0):
                         total += 1
 
