@@ -1,6 +1,10 @@
 #!/usr/bin/python3
+"""Islang perimeter algo"""
+
 
 def island_perimeter(grid):
+    """Islang perimeter algo"""
+
     total = 0
     for i in range(len(grid)):
         for j in range(len(grid)):
