@@ -5,8 +5,8 @@
 def island_perimeter(grid):
     """Island perimeter algo"""
     total = 0
-    for i in range(len(grid) - 1):
-        for j in range(len(grid[i]) - 1):
+    for i in range(len(grid)):
+        for j in range(len(grid[i])):
             if (grid[i][j] == 1):
 
                 if (j == len(grid[i]) - 1):
