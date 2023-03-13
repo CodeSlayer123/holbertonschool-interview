@@ -1,8 +1,9 @@
 #!/usr/bin/python3
-
 """Prime game this is task 0"""
+
+
 def is_prime(num):
-    """Prime game this is task 0"""
+    """is prime function"""
 
     flag = False
 
@@ -24,6 +25,8 @@ def is_prime(num):
             return True
 
 def isWinner(x, nums):
+    """is winner function"""
+
     rounds = x
     round = 0
     test = [2,2, 3, 4]
