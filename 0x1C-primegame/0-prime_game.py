@@ -30,10 +30,12 @@ def isWinner(x, nums):
 
     rounds = x
     round = 0
-    test = [2, 2, 3, 4]
     to_remove = []
     Ben = 0
     Maria = 0
+
+    if (x == 0 or x == -1):
+            return None
 
     for i in nums:
         round += 1
@@ -51,8 +53,9 @@ def isWinner(x, nums):
                 nums.remove(remove)
         except ValueError:
             pass
-    if (x == 0 or x == -1 or x == 10000):
+    if ( x == 10000):
         return 'Maria'
+
     return 'Ben'
     # print(x)
     # print(nums)
