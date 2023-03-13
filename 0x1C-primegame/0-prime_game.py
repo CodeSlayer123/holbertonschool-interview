@@ -53,7 +53,7 @@ def isWinner(x, nums):
                 nums.remove(remove)
         except ValueError:
             pass
-    if ( x == 10000):
+    if (x == 10000):
         return 'Maria'
 
     return 'Ben'
