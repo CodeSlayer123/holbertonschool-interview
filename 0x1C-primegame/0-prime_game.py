@@ -1,6 +1,9 @@
 #!/usr/bin/python3
 
+"""Prime game"""
 def is_prime(num):
+    """Prime game"""
+
     flag = False
 
     if num == 1:
