@@ -24,16 +24,17 @@ def is_prime(num):
         else:
             return True
 
+
 def isWinner(x, nums):
     """is winner function"""
 
     rounds = x
     round = 0
-    test = [2,2, 3, 4]
+    test = [2, 2, 3, 4]
     to_remove = []
     Ben = 0
     Maria = 0
-        
+
     for i in nums:
         round += 1
         if is_prime(i):
@@ -50,8 +51,7 @@ def isWinner(x, nums):
                 nums.remove(remove)
         except ValueError:
             pass
- 
-    
+
     return 'Ben'
     # print(x)
     # print(nums)
