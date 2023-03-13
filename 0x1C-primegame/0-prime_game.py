@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 
-"""Prime game"""
+"""Prime game this is task 0"""
 def is_prime(num):
-    """Prime game"""
+    """Prime game this is task 0"""
 
     flag = False
 
